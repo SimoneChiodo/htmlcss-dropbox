@@ -42,6 +42,10 @@ button:hover {
     cursor: pointer;
 }
 
+.container-column {
+    display: flex;
+}
+
 /* HEADER */
 
 /* upper-header */
@@ -87,10 +91,7 @@ header .right-header ul {
     background-color: #b4d0e7;
     padding-top: calc(70px + var(--header-height));
 }
-.lower-header .two-column {
-    display: flex;
-}
-.lower-header .two-column .col-two-header {
+.lower-header .container-column .col-two-header {
     height: 380px;
 }
 
@@ -126,6 +127,29 @@ header .right-header ul {
 }
 
 /* MAIN */
+main {
+    padding-top: 150px;
+}
+main h2 {
+    font-size: 2.5rem;
+    padding-bottom: 60px;
+}
+
+/* scelta-piani */
+main .scelta-piani input {
+    height: 20px;
+    width: 20px;
+}
+main .scelta-piani .radio-container {
+    display: flex;
+    align-items: center;
+    padding-bottom: 80px;
+}
+main .scelta-piani .radio-container span {
+    padding-left: 5px;
+    padding-right: 80px;
+}
+/* colonne-piani */
 
 /* FOOTER */
 footer {
@@ -138,25 +162,22 @@ footer {
     padding: 100px;
 }
 
-.five-column {
-    display: flex;
-}
-.five-column > * {
+footer .container-column > * {
     flex-basis: 20%;
 }
-.five-column h2 {
+footer h2 {
     padding-bottom: 15px; /* raddoppio la lunghezza per h2 */
     color: whitesmoke;
 }
-.five-column li {
+footer li {
     padding-bottom: 15px;
     color: var(--footer-gray);
 }
-.five-column a {
+footer a {
     text-decoration: none;
     color: inherit;
 }
-.five-column a:hover {
+footer a:hover {
     text-decoration: underline;
 }
 
