@@ -150,6 +150,72 @@ main .scelta-piani .radio-container span {
     padding-right: 80px;
 }
 /* colonne-piani */
+main .container .container-main {
+    display: flex;
+    justify-content: space-between;
+}
+main .container .container-main .col-main {
+    flex-basis: 30%;
+    height: 390px;
+}
+
+.main-col-title {
+    border: 1px solid lightgray;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.main-col-type {
+    border: 1px solid lightgray;
+    border-bottom: none;
+    padding: 40px 35px;
+}
+.main-col-type > h3 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+}
+.main-col-type > h4 {
+    font-size: 0.9rem;
+    padding-bottom: 10px;
+}
+.main-col-type > i {
+    font-size: 0.9rem;
+    color: gray;
+}
+.main-col-type > ul {
+    padding: 40px 0;
+}
+.main-col-type > ul > li {
+    padding: 15px 0;
+}
+.main-col-type > button {
+    width: 100%;
+    margin-bottom: 30px;
+}
+.main-col-type > span {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 40px;
+}
+
+.main-col-salienti {
+    border: 1px solid lightgray;
+    border-top: none;
+    padding: 40px 35px;
+
+    height: 100%;
+}
+.main-col-salienti > h5 {
+    font-size: 0.9rem;
+    padding-bottom: 30px;
+}
+.main-col-salienti > ul > li {
+    font-size: 0.9rem;
+    padding-bottom: 25px;
+}
+.main-col-salienti > ul > li > i {
+    color: #2365ff;
+}
 
 /* FOOTER */
 footer {
