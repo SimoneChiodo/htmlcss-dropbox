@@ -16,7 +16,7 @@
 .container-special {
     margin: 0 auto;
     padding: 0 10px;
-    width: 1000px;
+    width: 1200px;
     max-width: 100%;
 }
 
@@ -32,8 +32,6 @@ button:hover {
 }
 
 /* HEADER */
-header {
-}
 
 /* upper-header */
 .upper-header {
@@ -70,7 +68,48 @@ header a:hover {
 header .right-header ul {
     justify-content: end;
 }
-.right-header {
+
+/* lower-header */
+.lower-header {
+    background-color: #b4d0e7;
+    padding-top: 70px;
+}
+.lower-header .two-column {
+    display: flex;
+}
+.lower-header .two-column .col-two-header {
+    height: 380px;
+}
+
+.col-one-header {
+    position: relative;
+}
+
+.lower-header h1 {
+    font-size: 4rem;
+    font-weight: 800;
+
+    padding-bottom: 50px;
+}
+
+.lower-header .col-one-header p {
+    padding-bottom: 30px;
+}
+.lower-header .col-one-header button {
+    margin-bottom: 30px;
+}
+.lower-header .col-one-header i {
+    position: absolute;
+    bottom: 20px;
+
+    font-size: 3rem;
+}
+.lower-header .col-one-header i:hover {
+    cursor: pointer;
+}
+
+.lower-header img {
+    width: 800px;
 }
 
 /* MAIN */
