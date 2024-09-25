@@ -143,20 +143,48 @@ main .scelta-piani input {
 main .scelta-piani .radio-container {
     display: flex;
     align-items: center;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 main .scelta-piani .radio-container span {
     padding-left: 5px;
     padding-right: 80px;
 }
 /* colonne-piani */
-main .container .container-main {
+main .scelta-piani .container .container-main {
     display: flex;
     justify-content: space-between;
+
+    height: 400px;
+    margin-bottom: 630px;
 }
-main .container .container-main .col-main {
+/* 3 colonne */
+main .scelta-piani .container .container-main .col-main {
     flex-basis: 30%;
-    height: 390px;
+}
+/* linea orizzontale */
+main > .scelta-piani > .container > .col-main > .main-col-type {
+    display: flex;
+}
+main > .scelta-piani > .container > .col-main > .main-col-type .main-prima-col {
+    flex-basis: 70%;
+}
+main
+    > .scelta-piani
+    > .container
+    > .col-main
+    > .main-col-type
+    .main-seconda-col {
+    flex-basis: 30%;
+    text-align: right;
+}
+main
+    > .scelta-piani
+    > .container
+    > .col-main
+    > .main-col-type
+    .main-seconda-col
+    button {
+    padding: 10px 35px;
 }
 
 .main-col-title {
@@ -171,11 +199,11 @@ main .container .container-main .col-main {
     border-bottom: none;
     padding: 40px 35px;
 }
-.main-col-type > h3 {
+.main-col-type h3 {
     font-size: 1.5rem;
     padding-bottom: 20px;
 }
-.main-col-type > h4 {
+.main-col-type h4 {
     font-size: 0.9rem;
     padding-bottom: 10px;
 }
