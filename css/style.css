@@ -142,7 +142,7 @@ header .right-header ul {
 }
 
 /* MAIN */
-main section[class^="section"] {
+main section {
     padding-top: 150px;
 }
 main h2 {
@@ -151,21 +151,21 @@ main h2 {
 }
 
 /* scelta piani */
-main .section-piani input {
+#section-piani input {
     height: 20px;
     width: 20px;
 }
-main .section-piani .radio-container {
+#scelta-piani .radio-container {
     display: flex;
     align-items: center;
     padding-bottom: 50px;
 }
-main .section-piani .radio-container label {
+#scelta-piani .radio-container label {
     padding-left: 5px;
     padding-right: 80px;
 }
 /* colonne-piani */
-main .section-piani .container .container-main {
+#scelta-piani .container .container-main {
     display: flex;
     justify-content: space-between;
 
@@ -173,32 +173,21 @@ main .section-piani .container .container-main {
     margin-bottom: 630px;
 }
 /* 3 colonne */
-main .section-piani .container .container-main .col-main {
+#scelta-piani .container .container-main .col-main {
     flex-basis: 30%;
 }
 /* linea orizzontale */
-main > .section-piani > .container > .col-main > .main-col-type {
+#scelta-piani > .container > .col-main > .main-col-type {
     display: flex;
 }
-main
-    > .section-piani
-    > .container
-    > .col-main
-    > .main-col-type
-    .main-prima-col {
+#scelta-piani > .container > .col-main > .main-col-type .main-prima-col {
     flex-basis: 70%;
 }
-main
-    > .section-piani
-    > .container
-    > .col-main
-    > .main-col-type
-    .main-seconda-col {
+#scelta-piani > .container > .col-main > .main-col-type .main-seconda-col {
     flex-basis: 30%;
     text-align: right;
 }
-main
-    > .section-piani
+#scelta-piani
     > .container
     > .col-main
     > .main-col-type
@@ -219,7 +208,7 @@ main
     border-bottom: none;
     padding: 40px 35px;
 }
-main > .section-piani > .container > .col-main .main-col-type {
+#scelta-piani > .container > .col-main .main-col-type {
     border-bottom: 1px solid lightgray;
 }
 .main-col-type h4 {
@@ -265,129 +254,130 @@ main > .section-piani > .container > .col-main .main-col-type {
 }
 
 /* partner */
-main .section-partner .container {
+#trova-partner .container {
     display: flex;
 }
-main .section-partner .container .col-1 {
+#trova-partner .container .col-1 {
     flex-basis: 60%;
 }
-main .section-partner .container .col-2 {
+#trova-partner .container .col-2 {
     flex-basis: 40%;
 }
-main .section-partner .container .col-1 img {
+#trova-partner .container .col-1 img {
     max-width: 100%;
     height: auto;
 }
-main .section-partner .container .col-2 {
+#trova-partner .container .col-2 {
     padding: 50px;
 }
-main .section-partner .container .col-2 button {
+#trova-partner .container .col-2 button {
     color: black;
     background-color: white;
     border: 1px solid gray;
 }
 
 /* promo */
-main .section-promo > .container:last-child {
+#promo-card > .container:last-child {
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
 }
-main .section-promo .card {
+#promo-card .card {
     flex-basis: 30%;
 }
-main .section-promo img {
+#promo-card img {
     width: 100%;
     height: auto;
 }
 
 /* scopri i clienti */
-main .section-clienti > .container > h2 {
+#scopri-clienti > .container > h2 {
     padding-bottom: 50px;
 }
 
 /* info sui clienti */
-.sponsor-container-principale {
+#elenco-clienti .sponsor-container-principale {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
 
-    width: 100vw;
+    max-width: 100%;
 }
-.sponsor-container-small {
+#elenco-clienti .sponsor-container-small {
     display: flex;
     flex-wrap: wrap;
-    width: calc(100vw / 3);
+    width: calc(100% / 3);
 }
-.sponsor-container-special {
-    width: calc(100vw / 3);
+#elenco-clienti .sponsor-container-special {
+    width: calc(100% / 3);
     padding: 40px;
     background-color: #f5f5f5;
 }
-.sponsor {
+#elenco-clienti .sponsor {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: calc(100vw / 6);
+    width: 50%;
     height: calc(100vw / 6);
 }
-.sponsor > img {
+#elenco-clienti .sponsor > img {
     display: block;
-    width: 180px;
+    max-width: 180px;
     height: auto;
 }
-.sponsor-container-small div img {
+#elenco-clienti .sponsor-container-small div img {
     filter: invert(99%) sepia(5%) saturate(8%) hue-rotate(78deg)
         brightness(109%) contrast(100%);
 }
-.designit {
+#elenco-clienti .designit {
     background-color: #a2d39b;
     border: 15px solid #d1e9cd;
 }
-.arizona {
+#elenco-clienti .arizona {
     background-color: #61082b;
 }
-.florida {
+#elenco-clienti .florida {
     background-color: #0093ce;
 }
-.topps {
+#elenco-clienti .topps {
     background-color: #ff1c1c;
 }
-.world {
+#elenco-clienti .world {
     background-color: #d5001f;
 }
-.hearst {
+#elenco-clienti .hearst {
     background-color: #b4d0e7;
 }
-.lonely {
+#elenco-clienti .lonely {
     background-color: #0d2481;
 }
-.clear-channel {
+#elenco-clienti .clear-channel {
     background-color: #ffd830;
 }
-.sponsor-container-special img {
+#elenco-clienti .sponsor-container-special img {
     width: 250px;
     height: auto;
 }
 
 /* prova business */
-.prova {
+#prova-business {
     background-color: #b4d0e7;
     color: #61082b;
 
     height: 300px;
+    padding-top: 0px;
 
     display: flex;
     align-items: center;
 }
-.prova > .container {
+#prova-business > .container {
     position: relative;
 }
-.prova > .container > h3 {
+#prova-business > .container > h3 {
     font-size: 2.5rem;
 }
-.prova > .container > button {
+#prova-business > .container > button {
     position: absolute;
     top: 10px;
     right: 0;
@@ -398,17 +388,17 @@ main .section-clienti > .container > h2 {
 }
 
 /* domande */
-.container-domanda {
+#domande-frequenti .container-domanda {
     border-top: 1px solid black;
     padding: 40px 0;
 
     position: relative;
 }
-.container-domanda span {
+#domande-frequenti .container-domanda span {
     position: absolute;
     right: 40px;
 }
-.container-domanda input {
+#domande-frequenti .container-domanda input {
     cursor: pointer;
     opacity: 0;
 
@@ -418,26 +408,35 @@ main .section-clienti > .container > h2 {
     width: 100%;
     height: 100%;
 }
-.container-domanda:last-child {
+#domande-frequenti .container-domanda:last-child {
     margin-bottom: 150px;
     border-bottom: 1px solid black;
 }
 
-.container-risposta {
+#domande-frequenti .container-risposta {
     display: none;
 }
-.container-risposta p {
+#domande-frequenti .container-risposta p {
     padding: 40px 10px 0;
     text-align: justify;
 }
 
-.container-domanda input[id="domanda-1"]:checked + .risposta-1 {
+#domande-frequenti
+    .container-domanda
+    input[id="domanda-1"]:checked
+    + .risposta-1 {
     display: block;
 }
-.container-domanda input[id="domanda-2"]:checked + .risposta-2 {
+#domande-frequenti
+    .container-domanda
+    input[id="domanda-2"]:checked
+    + .risposta-2 {
     display: block;
 }
-.container-domanda input[id="domanda-3"]:checked + .risposta-3 {
+#domande-frequenti
+    .container-domanda
+    input[id="domanda-3"]:checked
+    + .risposta-3 {
     display: block;
 }
 
