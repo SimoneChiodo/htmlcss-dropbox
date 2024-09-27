@@ -55,10 +55,10 @@ p {
     padding-bottom: 30px;
 }
 
-.small-line {
-    width: 100px;
-    height: 1px;
-    border-bottom: 1px solid lightgray;
+hr {
+    border: 1px solid lightgray;
+    width: 30%;
+    margin-top: 40px;
 }
 
 /* HEADER */
@@ -206,7 +206,7 @@ main h2 {
 .main-col-type {
     border: 1px solid lightgray;
     border-bottom: none;
-    padding: 40px 35px;
+    padding: 40px 35px 0 35px;
 }
 #scelta-piani > .container > .col-main .main-col-type {
     border-bottom: 1px solid lightgray;
@@ -221,6 +221,10 @@ main h2 {
 }
 .main-col-type > ul {
     padding: 40px 0;
+    height: 300px;
+}
+#scelta-piani ul {
+    margin-left: 25px;
 }
 .main-col-type > ul > li {
     padding: 15px 0;
@@ -228,10 +232,6 @@ main h2 {
 .main-col-type > button {
     width: 100%;
     margin-bottom: 30px;
-}
-.main-col-type > span {
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 40px;
 }
 
 .main-col-salienti {
@@ -249,7 +249,7 @@ main h2 {
     font-size: 0.9rem;
     padding-bottom: 25px;
 }
-.main-col-salienti > ul > li > i {
+.main-col-salienti > ul i {
     color: #2365ff;
 }
 
@@ -312,6 +312,11 @@ main h2 {
     width: calc(100% / 3);
     padding: 40px;
     background-color: #f5f5f5;
+}
+#elenco-clienti hr {
+    border: 1px solid lightgray;
+    width: 100px;
+    margin: 0;
 }
 #elenco-clienti .sponsor {
     display: flex;
@@ -471,10 +476,11 @@ footer a:hover {
 }
 
 /* separator-footer */
-.separator-footer {
-    border-top: 1px solid var(--footer-gray);
+footer hr {
+    border: 1px solid var(--footer-gray);
     width: 120px;
-    height: 70px;
+    margin: 0;
+    margin-bottom: 70px;
 }
 
 /* lower-footer */
